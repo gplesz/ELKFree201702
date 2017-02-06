@@ -28,7 +28,7 @@ A tanfolyam most készülő és a [megelőző tanfolyam](https://github.com/gple
 
 
 ## Letöltések
-- Az előző tanfolyamon elkészült virtuális gépeket innen lehet letölteni: ELK szerver és APP szerver
+- Az előző tanfolyamon elkészült virtuális gépeket innen lehet letölteni: [ELK szerver](https://vidibitstorage.blob.core.windows.net/elsfree/w2k12r2-elk.rar) és [APP szerver](https://vidibitstorage.blob.core.windows.net/elsfree/w2k12r2-app.rar)
 
 - A használathoz a korábbi alkalomhoz hasonlóan VMWare ingyenes Player kell, amit [innen lehet letölteni](http://www.vmware.com/products/player/playerpro-evaluation.html)
 
