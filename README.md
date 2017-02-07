@@ -137,4 +137,8 @@ IP cím, Exchange, Username, Password
   </log4net>
 ```
 
+Az APP szerveren kinyitjuk a RabbitMQ portját:
 
+**netsh advfirewall firewall add rule name="Open Port 5672" dir=in action=allow protocol=TCP localport=5672**
+
+Létrehozunk egy **topic** alapú exchange-et: **test-x** néven az app szerveren, minden más beállítás alapértelmezett. 
