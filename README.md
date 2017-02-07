@@ -98,3 +98,7 @@ Mivel a Kibana és a Logstash már fut, elindítjuk az Elasticsearch szervert az
 Az eddigiekktől eltérően nem nssm-et használunk, mivel az elasticsearch saját windows szervizt tud futtatni, a **C:\ProgramData\chocolatey\lib\elasticsearch\tools\elasticsearch-2.3.1\bin>** könytárban adjuk ki a **service install** parancsot parancssorból, és a processzorarchitektúrának megfelelő szerviz települ.
 
 Ez alapértelmezetten manual-ra van állítva, állítsuk át automatikusan elindulóra. Ehhez az elasticsearch saját service managerét érdemes használni (**service manager** parancs ugyaninnen), mert itt még a java beállításokat is meg tudjuk adni.
+
+## Szervizek indulási sorrendje:
+
+A parancssorból **sc config "Logstash" depend="elasticsearch-service-x64/RabbitMQ"** paranccsal be tudjuk állítani, hogy a Logstash csak azután induljon el, miután az Elasticsearch ÉS a RabbitMQ szervizek már elindultak.
