@@ -154,3 +154,25 @@ Létrehozunk egy **topic** alapú exchange-et: **test-x** néven az app szervere
 
 Illetve hozzunk létre egy Bindingot az Exchange-ből az **app-logging-queue** felé, a routing paraméter legyen #.
 
+## Windows napló begyűjtése RabbitMQ-ba
+A logstash képes windows naplót gyűjteni és ezt a RabbitMQ felé továbbküldeni így (ez egy példa, most nem próbáltuk ki):
+
+```
+input {
+	eventlog {
+	    type => "Win32-EventLog"
+		logfile => ["System","Security","Application"]
+	}
+ 
+output {
+ rabbitmq {
+		host => "localhost"
+		user     => "netacademia"
+		password => "neta"
+		exchange    => "app-logging-exchange"
+  exchange_type => "direct"
+	}
+}
+```
+
+A Logstash a konfigurációját innen szedi: **C:\logstash\conf.d\neta.conf**, mivel a C:\logstash\bin\logstash.cmd-t indítja az NSSM.
