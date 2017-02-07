@@ -20,12 +20,22 @@ Az ElasticSearch dióhéjban tanfolyamból már tartottunk egy alkalmat, amikori
  - Végül az **ELK**-n telepítettünk egy *Kibana* webalkalmazást, hogy az ElasticSearch által tárolt adatokat meg tudjuk jeleníteni.
  
  - Mindezt elindítottuk, és az APP szerver RabbitMQ postájában egy-két üzenet generálásával kipróbáltuk a működést.
+ 
+ 
 
 ## Videók
 A tanfolyam most készülő és a [megelőző tanfolyam](https://github.com/gplesz/ELKFree201611) videóit [itt lehet elérni](http://www.netacademia.hu/ELSfree-elastic-search--nutshell). 
 
-## Előkészületek
+- Az előző tanfolyamot követően telepítettem a Logstash és a Kibana szervizeket az NSSM segítségével, a következő módon:
+- nssm install Kibana
+  A megjelenő ablakban pedig a Path mezőbe: **C:\ProgramData\chocolatey\lib\kibana\kibana-4.5.4-windows\bin\kibana.bat**
+  A Startup directory mezőbe: **C:\ProgramData\chocolatey\lib\kibana\kibana-4.5.4-windows\bin**
 
+- nssm install Logstash
+  Hasonlóan a Kibanához a Path mezőbe: **c:\logstash\bin\logstash.cmd**
+  és **c:\logstash\bin\**
+
+## Előkészületek
 
 ## Letöltések
 - Az előző tanfolyamon elkészült virtuális gépeket innen lehet letölteni: [ELK szerver](https://vidibitstorage.blob.core.windows.net/elsfree/w2k12r2-elk.rar) és [APP szerver](https://vidibitstorage.blob.core.windows.net/elsfree/w2k12r2-app.rar)
