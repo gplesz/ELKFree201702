@@ -34,6 +34,8 @@ A tanfolyam most készülő és a [megelőző tanfolyam](https://github.com/gple
 
 - A VMWare Windows 10-re telepítéséhez lehet, hogy  [le kell tiltani a Credential Guard/Device Guard](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2146361) nevű szolgáltatást. Részletes leírás a linken.
 
+A VMWare az első induláskor egy ingyenes regisztrációval indítható. Ehhez egy e-mail címet kér. Az ingyenes regisztrációhoz nyugodtan használjátok a saját e-mail címet, vagy az enyémet: gabor.plesz@gmail.com, vagy egyszerűen egy *@mailinator.com végű címet.
+
 ### Kicsomagolás, stb. 
 A letöltött virtuális gépeket kicsomagoljuk. Belépés a windows szerverekbe: **Administrator** jelszó: **Windows2012**
 
