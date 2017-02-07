@@ -87,3 +87,9 @@ Ha van csomagkezelőnk, a Visual Studio Community telepítése [adminisztrátori
 
 Ezzel meg is vagyunk az előkészületekkel, a többit a tanfolyamon folytatjuk!
 
+## tanfolyam
+Elindítjuk mindkét virtuális gépet a vmx kiterjesztésű állományra kétszer kattintva. Mivel a virtuális gépek mozogtak, így át kell állítani az App szerveren a Shovel-t, hogy a megfelelő IP címre küldje a naplónkat.
+
+Ehhez az előző Shovel-t töröljük, majd az újat az ELK szerver IP címére állítjuk.
+
+Mivel a Kibana és a Logstash már fut, elindítjuk az Elasticsearch szervert az ELK gépen a **C:\ProgramData\chocolatey\lib\elasticsearch\tools\elasticsearch-2.3.1\bin>** könyvtárból az **elasticsearch.bat** futtatásával parancssorból.
