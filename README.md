@@ -109,4 +109,32 @@ A parancssorból **sc config "Logstash" depend="elasticsearch-service-x64/Rabbit
 
 PM> **Install-Package rabbitmq.log4net.gelf.appender**
 
+Majd a csomag [weboldaláról](https://github.com/hancengiz/rabbitmq.log4net.gelf.appender) használjuk ezt a konfigurációt, módosítva az eredeti beállításokat:
+
+IP cím, Exchange, Username, Password
+
+```
+<configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler,Log4net" />
+  </configSections>
+
+  <log4net>
+    <appender name="rabbitmq.gelf.appender" type="rabbitmq.log4net.gelf.appender.GelfRabbitMqAppender, rabbitmq.log4net.gelf.appender">
+      <HostName value="192.168.196.128" />
+      <VirtualHost value="/" />
+      <Port value="5672" />
+      <Exchange value="app-logging-exchange" />
+      <Username value="netacademia" />
+      <Password value="neta" />
+      <Facility value="sample-application" />
+    </appender>
+
+    <root>
+      <level value="ERROR" />
+      <appender-ref ref="rabbitmq.gelf.appender" />
+    </root>
+  
+  </log4net>
+```
+
 
