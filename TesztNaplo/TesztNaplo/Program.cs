@@ -15,6 +15,10 @@ namespace TesztNaplo
         {
             log4net.Config.XmlConfigurator.Configure();
 
+            logger.Debug("Elindult a programunk");
+
+            log4net.LogManager.Shutdown();
+
         }
     }
 }
