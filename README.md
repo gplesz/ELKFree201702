@@ -102,3 +102,11 @@ Ez alapértelmezetten manual-ra van állítva, állítsuk át automatikusan elin
 ## Szervizek indulási sorrendje:
 
 A parancssorból **sc config "Logstash" depend="elasticsearch-service-x64/RabbitMQ"** paranccsal be tudjuk állítani, hogy a Logstash csak azután induljon el, miután az Elasticsearch ÉS a RabbitMQ szervizek már elindultak.
+
+## Visual Studio projekt
+
+Új projekt megnyitása (Installed\Templates\Visual C#\Windows, ezen belül konzol alkalmazás), majd a Package manager Console-ból [a megfelelő csomag](https://www.nuget.org/packages/rabbitmq.log4net.gelf.appender/) telepítése a következő paramcssal:
+
+PM> **Install-Package rabbitmq.log4net.gelf.appender**
+
+
