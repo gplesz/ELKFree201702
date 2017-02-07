@@ -93,3 +93,8 @@ Elindítjuk mindkét virtuális gépet a vmx kiterjesztésű állományra kétsz
 Ehhez az előző Shovel-t töröljük, majd az újat az ELK szerver IP címére állítjuk.
 
 Mivel a Kibana és a Logstash már fut, elindítjuk az Elasticsearch szervert az ELK gépen a **C:\ProgramData\chocolatey\lib\elasticsearch\tools\elasticsearch-2.3.1\bin>** könyvtárból az **elasticsearch.bat** futtatásával parancssorból.
+
+## Elasticsearch windows service telepítése
+Az eddigiekktől eltérően nem nssm-et használunk, mivel az elasticsearch saját windows szervizt tud futtatni, a **C:\ProgramData\chocolatey\lib\elasticsearch\tools\elasticsearch-2.3.1\bin>** könytárban adjuk ki a **service install** parancsot parancssorból, és a processzorarchitektúrának megfelelő szerviz települ.
+
+Ez alapértelmezetten manual-ra van állítva, állítsuk át automatikusan elindulóra. Ehhez az elasticsearch saját service managerét érdemes használni (**service manager** parancs ugyaninnen), mert itt még a java beállításokat is meg tudjuk adni.
