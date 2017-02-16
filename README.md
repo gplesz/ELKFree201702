@@ -92,8 +92,8 @@ Elindítjuk mindkét virtuális gépet a vmx kiterjesztésű állományra kétsz
 
 Ehhez az előző Shovel-t töröljük, majd az újat az ELK szerver IP címére állítjuk. Például:
 
-- forrás url: amqp://netacademia:neta@localhost, forrás queue: app-logging-queue
-- cél url: amqp://netacademia:neta@192.168.23.129, cél queue: app-logging-queue-central
+- forrás url: **amqp://netacademia:neta@localhost**, forrás queue: **app-logging-queue**
+- cél url: **amqp://netacademia:neta@192.168.23.129**, cél queue: **app-logging-queue-central**
 
 Figyeljük meg, hogy az url-ben a @ előtt a felhasználó neve és jelszava megjelenik.
 
