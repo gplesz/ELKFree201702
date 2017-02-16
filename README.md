@@ -103,6 +103,7 @@ Mivel a Kibana és a Logstash már fut, elindítjuk az Elasticsearch szervert az
 A Kibana portját (5601) megnyitottuk az ELK szerveren a következő parancssal:
 
 **netsh advfirewall firewall add rule name="Open Port 5601" dir=in action=allow protocol=TCP localport=5601**
+
 Figyeljünk arra, hogy a Kibana ingyenes csomagja nem autentikál, így aki látja a portot az mindenhez hozzáfér.
 
 ## Elasticsearch windows service telepítése
