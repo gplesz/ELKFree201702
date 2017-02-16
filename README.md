@@ -88,7 +88,7 @@ Ha van csomagkezelőnk, a Visual Studio Community telepítése [adminisztrátori
 Ezzel meg is vagyunk az előkészületekkel, a többit a tanfolyamon folytatjuk!
 
 ## tanfolyam
-Elindítjuk mindkét virtuális gépet a vmx kiterjesztésű állományra kétszer kattintva. Mivel a virtuális gépek mozogtak, így át kell állítani az App szerveren a Shovel-t, hogy a megfelelő IP címre küldje a naplónkat (admin/shovel management menüpont a RabbitMQ webes kezelőfelületén).
+Elindítjuk mindkét virtuális gépet a vmx kiterjesztésű állományra kétszer kattintva. Mivel a virtuális gépek mozogtak, így át kell állítani az App szerveren a Shovel-t, hogy a megfelelő IP címre küldje a naplónkat (admin/shovel management menüpont a RabbitMQ webes kezelőfelületén, App szerver: http://localhost:15672/#/).
 
 Ehhez az előző Shovel-t töröljük, majd az újat az ELK szerver IP címére állítjuk. Például:
 
