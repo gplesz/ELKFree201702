@@ -97,7 +97,8 @@ Mivel a Kibana és a Logstash már fut, elindítjuk az Elasticsearch szervert az
 ## Kibana elérése távolról
 A Kibana portját (5601) megnyitottuk az ELK szerveren a következő parancssal:
 
-
+**netsh advfirewall firewall add rule name="Open Port 5601" dir=in action=allow protocol=TCP localport=5601**
+Figyeljünk arra, hogy a Kibana ingyenes csomagja nem autentikál, így aki látja a portot az mindenhez hozzáfér.
 
 ## Elasticsearch windows service telepítése
 Az eddigiekktől eltérően nem nssm-et használunk, mivel az elasticsearch saját windows szervizt tud futtatni, a **C:\ProgramData\chocolatey\lib\elasticsearch\tools\elasticsearch-2.3.1\bin>** könytárban adjuk ki a **service install** parancsot parancssorból, és a processzorarchitektúrának megfelelő szerviz települ.
@@ -111,10 +112,6 @@ A parancssorból **sc config "Logstash" depend="elasticsearch-service-x64/Rabbit
 ## Visual Studio projekt
 
 Új projekt megnyitása (Installed\Templates\Visual C#\Windows, ezen belül konzol alkalmazás), majd a Package manager Console-ból [a megfelelő csomag](https://www.nuget.org/packages/rabbitmq.log4net.gelf.appender/) telepítése a következő parancssal:
-
-**netsh advfirewall firewall add rule name="Open Port 5601" dir=in action=allow protocol=TCP localport=5601**
-
-Figyeljünk arra, hogy a Kibana ingyenes csomagja nem autentikál, így aki látja a portot az mindenhez hozzáfér.
 
 PM> **Install-Package rabbitmq.log4net.gelf.appender**
 
