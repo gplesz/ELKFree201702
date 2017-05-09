@@ -3,6 +3,8 @@ Az ElasticSearch dióhéjban című NetAcademia tanfolyam kódtár kiegészíté
 
 A tanfolyam a [korábbi alkalom](https://github.com/gplesz/ELKFree201611) folytatása, az ott épített infrastruktúrát fogjuk kihasználni. A tanfolyam önállóan követhető, de tanácsoljuk az előző tanfolyam anyagainak és videóinak áttekintését.
 
+[A következő alkalom kódtára](https://github.com/gplesz/ELKFree201705)
+
 ## Bevezetés
 Az ElasticSearch dióhéjban tanfolyamból már tartottunk egy alkalmat, amikoris az infrastruktúrát állítottuk fel Windows környezetben. Az infrastruktúra a következő lett:
 
